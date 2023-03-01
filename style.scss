@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color:whitesmoke;
+    padding: 10px 30px;
+    box-shadow: 5px 5px 5px gray;
+
+    .left{
+        img{
+            height:50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+
+    }
+    .right{
+        ul{
+            list-style: none;
+        
+            display: flex;
+            
+            
+            a{
+                text-decoration: none;
+                padding-left: 20px;
+                
+                &:hover{
+                    color: black;
+                    background-color:yellow;
+                    border: 1px solid ;
+                    padding: 10px;
+                }
+                
+            }
+        }
+    }
+}
+
+main{
+    width:100%;
+    height: 90vh;
+    background-image:url(chair.jpg);
+    background-size:cover ;
+    background-repeat: no-repeat;
+    position:relative;
+    top: 0;
+    left: 0;
+
+    .left{
+        width: 50vw;
+        height: 90vh;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+
+        @media (max-width:576px){
+            width: 100vw;
+        }
+        
+        h1{
+            width: 50%;
+            font-style:50px;
+            padding-left: 70px;
+            margin-bottom: 40px;
+           
+            @media(max-width:576px){
+                width: 70%;
+            }
+            
+        }
+        p{
+            padding-left: 70px;
+            margin-bottom: 40px;
+            width: 80%;
+
+            @media(max-width:576px){
+                width: 80%;
+            }
+            
+        }
+
+        .link{
+            margin-left: 70px;
+             text-decoration: none;
+             background-color: yellow;
+             border-radius: 20px;
+             padding: 10px 90px;
+
+        }
+       
+        
+    }
+}
+
+
+
+
